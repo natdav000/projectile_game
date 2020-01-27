@@ -68,6 +68,8 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
 . . . . . . . . . . . . . . . . 
 `, SpriteKind.Enemy)
 })
+// when the A button is pressed the tank will fire a
+// projectile
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(img`
 . . . . . . . . . . . . . . . . 
